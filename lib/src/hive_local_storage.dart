@@ -42,7 +42,7 @@ class LocalStorage {
         Hive.registerAdapter(adapter);
       }
     }
-    Hive.registerAdapter(SessionAdapter());
+    //Hive.registerAdapter(SessionAdapter());
     _storage = const FlutterSecureStorage(
       aOptions: AndroidOptions(encryptedSharedPreferences: true),
       iOptions: IOSOptions(accessibility: KeychainAccessibility.unlocked),
